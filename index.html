@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 04 - Auto Parts Order Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Times New Roman", serif;
+        }
+
+        form {
+            width: 80%;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-family: "Times New Roman", serif;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px 10px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 220px;
+            resize: both;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Great Auto Parts - Order Form</h1>
+
+    <form>
+        <label>
+            First Name:
+            <input type="text" name="firstName"
+                   placeholder="Enter your first name">
+        </label>
+
+        <label>
+            Last Name:
+            <input type="text" name="lastName"
+                   placeholder="Enter your last name">
+        </label>
+
+        <label>
+            Email:
+            <input type="email" name="email"
+                   placeholder="Enter your email address">
+        </label>
+
+        <label>
+            Phone number:
+            <input type="tel" name="phone"
+                   placeholder="Enter your phone number">
+        </label>
+
+        <label>
+            Make:
+            <input type="text" name="make" placeholder="Make">
+        </label>
+
+        <label>
+            Model:
+            <input type="text" name="model" placeholder="Model">
+        </label>
+
+        <label>
+            Year:
+            <input type="number" name="year" placeholder="Year">
+        </label>
+
+        <label>
+            Date:
+            <input type="date" name="date">
+        </label>
+
+        <label>
+            Spare Part:
+            <input type="text" name="sparePart"
+                   placeholder="Enter the spare part you need">
+        </label>
+
+        <label>
+            Quantity:
+            <input type="number" name="quantity"
+                   placeholder="Enter the quantity of the spare part you need">
+        </label>
+
+        <label>
+            Comment:
+            <textarea name="comment"
+                      placeholder="Enter your comment"></textarea>
+        </label>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
